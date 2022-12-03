@@ -6,7 +6,7 @@ public class HomeTask {
         house.hight = 6;
         house.owner = "Kabachok I.T";
 
-        
+
 
 
     }

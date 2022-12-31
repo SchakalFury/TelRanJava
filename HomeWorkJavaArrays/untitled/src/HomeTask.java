@@ -45,7 +45,7 @@ public class HomeTask {
         // second = {‘f’,’g’,’h’,’i’,’g’} создать массив соединяющий два этих массива в один новый
         secondLevelTaskOne();
 
-       
+
 
     }
 

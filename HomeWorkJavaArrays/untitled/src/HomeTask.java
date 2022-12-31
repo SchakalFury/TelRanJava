@@ -38,8 +38,14 @@ public class HomeTask {
         //
         //Поиск максимума.
         //Деление на него элементов массива
-        firstLevelTaskSix();
+       // firstLevelTaskSix();
 
+
+        //Second level: 1. Есть два массива char[] first = {‘a’,’b’,’c’,’d’,’e’} и char[]
+        // second = {‘f’,’g’,’h’,’i’,’g’} создать массив соединяющий два этих массива в один новый
+        secondLevelTaskOne();
+
+       
 
     }
 
@@ -165,12 +171,31 @@ public class HomeTask {
         System.out.println();
         System.out.println("The result of dividing by the largest number in the array is:");
         for (int i = 0; i < numbs.length; i++) {
-            double a = numbs[i] / largestNumber;
+           float a = numbs[i] / largestNumber;
             System.out.println(a);
         }
 
     }
-}
+
+    public static void secondLevelTaskOne(){
+        char[] first = {'a', 'b', 'c', 'd', 'e'};
+        char[] second = {'f', 'g', 'h', 'i', 'g'};
+        char[] result = new char[first.length + second.length];
+        int count = 0;
+
+        for(int i = 0; i < first.length; i++) {
+            result[i] = first[i];
+            count++;
+        }
+        for(int j = 0;j < second.length; j++) {
+            result[count++] = second[j];
+        }
+
+        for(int i = 0;i < result.length; i++)
+            System.out.print(result[i]+" ");
+    }
+    }
+
 
 
 
